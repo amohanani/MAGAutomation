@@ -1,0 +1,3 @@
+# MAGAutomation
+
+test
