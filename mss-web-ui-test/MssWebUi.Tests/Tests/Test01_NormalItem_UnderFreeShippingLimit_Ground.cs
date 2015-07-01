@@ -62,7 +62,7 @@ namespace MssWebUiTest.Tests
             Assert.AreEqual(_productPrice, cartPage.GetSubTotalPriceInCart(),
                 "Product sub total on product information page and cart page is not matching.");
             _shippingPrice = cartPage.GetShippingExpectedInCartPage();
-            var productSubTotalPrice = SplitAndConvert(_productPrice, 1);
+            var productSubTotalPrice = decimal.Parse(SplitAndConvert(_productPrice, 1));
             _productGrandTotalPrice = cartPage.GetGrandTotalInCartPage();
 
             Debug.WriteLine("Shipping Price:" + _shippingPrice + " SubTotal:" + productSubTotalPrice + " GrandTotal: " +
@@ -175,10 +175,15 @@ namespace MssWebUiTest.Tests
             Assert.True(orderSummaryPage.GetPaymentDetails().Contains("**** **** **** 1111"));
         }
 
-        private decimal SplitAndConvert(string strToSplit, int index)
+        private string SplitAndConvert(string strToSplit, int index)
         {
             var strArr = strToSplit.Split(_splitChar);
-            return decimal.Parse(strArr[index]);
+            return strArr[index];
+        }
+
+        private void Test2()
+        {
+
         }
     }
 }
