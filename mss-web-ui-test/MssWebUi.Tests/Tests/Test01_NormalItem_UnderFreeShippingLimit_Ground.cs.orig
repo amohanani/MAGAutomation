@@ -175,23 +175,29 @@ namespace MssWebUiTest.Tests
             Assert.True(orderSummaryPage.GetPaymentDetails().Contains("**** **** **** 1111"));
         }
 
+<<<<<<< HEAD
         private decimal SplitAndConvert(string strToSplit, int index)
         {
             var strArr = strToSplit.Split(_splitChar);
             return decimal.Parse(strArr[index]);
+=======
+        private int SplitAndConvert(string strToSplit, int index)
+        {
+            var strArr = strToSplit.Split(_splitChar);
+            return int.Parse(strArr[index]);
+>>>>>>> c15336e74e604690ad738a3cc1800e456ce3eeb9
         }
 
         private void TestMethod()
         {
+<<<<<<< HEAD
+
+
+
+=======
             int abc = 1;
+>>>>>>> c15336e74e604690ad738a3cc1800e456ce3eeb9
         }
-
-        private void Test2()
-        {
-
-
-
-        }
-
-        }
+        
     }
+}
