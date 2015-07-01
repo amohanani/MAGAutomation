@@ -102,7 +102,6 @@ namespace MssWebUiTest.Tests
             Assert.True(shippingBillingPage.IsOvernightShippingPresent(), "Overnight Shipping option is not present.");
             Assert.True(shippingBillingPage.IsTwoDayShippingPresent(), "Two Day Shipping option is not present.");
             shippingBillingPage.ClickOvernightShipping();
-            shippingBillingPage.CheckPayPalIsNotPresent();
             _shippingPrice = shippingBillingPage.GetOvernightShippingCharges();
             _taxes = shippingBillingPage.GetTaxes();
             Assert.True(_taxes != 0, "Taxes are not present");

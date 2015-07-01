@@ -57,9 +57,12 @@
     <Compile Include="Tests\Test02_NormalItem_OverFreeShippingLimit_Ground.cs" />
     <Compile Include="Tests\Test01_NormalItem_UnderFreeShippingLimit_Ground.cs" />
     <Compile Include="Tests\Test10_OilChemicalItem_OverFreeShippingLimit_Ground.cs" />
+    <Compile Include="Tests\Test12_TireItem_OverFreeShippingLimit_Ground.cs" />
+    <Compile Include="Tests\Test15_KY_NormalItem_UnderFreeShippingLimit_Overnight.cs" />
     <Compile Include="Tests\Test20_KY_OversizeItem_OverFreeShippingLimit_Ground.cs" />
     <Compile Include="Tests\Test32_FL_OversizeItem_OverFreeShippingLimit_Ground.cs" />
-    <Compile Include="Tests\Test12_TireItem_OverFreeShippingLimit_Ground.cs" />
+    <Compile Include="Tests\Test41_TX_NormalItem_UnderFreeShippingLimit_TwoDay.cs" />
+    <Compile Include="Tests\Test70_LDN_NormalItem_UnderFreeShippingLimit_UKExpedited.cs" />
     <Compile Include="Tests\TestCartPage.cs" />
     <Compile Include="Tests\TestHomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
