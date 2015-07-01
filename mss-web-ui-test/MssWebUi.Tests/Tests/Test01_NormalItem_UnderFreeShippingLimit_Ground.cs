@@ -175,7 +175,7 @@ namespace MssWebUiTest.Tests
             Assert.True(orderSummaryPage.GetPaymentDetails().Contains("**** **** **** 1111"));
         }
 
-        private string SplitAndConvert(string strToSplit, int index)
+        private int SplitAndConvert(string strToSplit, int index)
         {
             var strArr = strToSplit.Split(_splitChar);
             return strArr[index];
