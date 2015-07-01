@@ -180,5 +180,11 @@ namespace MssWebUiTest.Tests
             var strArr = strToSplit.Split(_splitChar);
             return decimal.Parse(strArr[index]);
         }
+
+        private void TestMethod()
+        {
+            int abc = 1;
+        }
+        
     }
 }
