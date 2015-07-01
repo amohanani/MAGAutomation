@@ -59,6 +59,7 @@
     <Compile Include="Tests\Test10_OilChemicalItem_OverFreeShippingLimit_Ground.cs" />
     <Compile Include="Tests\Test20_KY_OversizeItem_OverFreeShippingLimit_Ground.cs" />
     <Compile Include="Tests\Test32_FL_OversizeItem_OverFreeShippingLimit_Ground.cs" />
+    <Compile Include="Tests\Test12_TireItem_OverFreeShippingLimit_Ground.cs" />
     <Compile Include="Tests\TestCartPage.cs" />
     <Compile Include="Tests\TestHomePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
